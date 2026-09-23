@@ -152,7 +152,7 @@
         shareCopyBtn.addEventListener('click', function () {
             if (navigator.clipboard && navigator.clipboard.writeText) {
                 navigator.clipboard.writeText(pageUrl).then(function () {
-                    shareStatus.textContent = 'تم نسخ الرابط بنجاح';
+                    shareStatus.textContent = 'نُسخ الرابط، الصقه حيث تشاء';
                     setTimeout(function () { shareStatus.textContent = ''; }, 3500);
                 }).catch(function () {
                     prompt('انسخ الرابط:', pageUrl);
